@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    background:black;
+    color: white;
+}
+
+.header{
+    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 10%;
+   background-color:transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100 ;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.logo{
+    font-size: 18px;
+    color:white ;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(209, 222, 36);
+
+}
+.home{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.home-content h2{
+    font-size: 46px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    background: yellowgreen;
+}
+.home-content p{
+    font-size: 16px;
+}
+.btn-box a {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgba(15, 245, 245, 0.957);
+    border: solid rgba(15, 245, 245, 0.957) ;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration:none;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+}
+.home-content{
+    max-width: 700px;
+}
+.home-content .btn-box{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /* background: yellowgreen; */
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: rgba(15, 245, 245, 0.957);
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.btn-box a::before{
+    content: ' ';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100;
+}
+.image-container{
+    margin-left: 750px;
+    margin-top: -280px;
+    position: absolute;
+}
+img{
+    width: 300px;
+    height: 400px;
+}
